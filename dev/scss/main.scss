@@ -1,0 +1,21 @@
+@import "lib/materialize";
+
+.btn-fixed{
+	position: fixed;
+	right: 5%;
+	bottom: 5%;
+}
+
+.add-task-form{
+	position: fixed;
+	height: calc(100% - 60px);
+	left: 0;
+	top: 100%;
+	background-color: #fff;
+	z-index: 2;
+	transition: top .4s ease-in-out;
+
+	&.is--opened{
+		top: 60px;
+	}
+}
